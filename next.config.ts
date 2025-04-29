@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
+// import nextConfigI18n from './next-i18next.config.js';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // ...nextConfigI18n,
+  experimental: {
+    // appDir: true,
+  },
 };
 
 export default nextConfig;

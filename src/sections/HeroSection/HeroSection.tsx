@@ -1,6 +1,6 @@
 "use client"
 
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from '@/i18n/I18nProvider';
 
 export const HeroSection = () => {
       const { t } = useTranslation();
@@ -11,3 +11,5 @@ export const HeroSection = () => {
           <p>{t('home.description')}</p>
         </>)
 }
+
+
