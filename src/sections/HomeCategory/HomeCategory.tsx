@@ -1,6 +1,5 @@
 "use client"
 
-// import { CategoryCard } from "@/components/CategoryCard/CategoryCard";
 import { categoryBox, categoryButton } from "@/components/CategoryCard/CategoryCard.styles";
 import { useTranslation } from "@/i18n/I18nProvider";
 import Link from "next/link";
@@ -27,7 +26,6 @@ export const HomeCategory = () => {
               {t("viewCatalog")}
             </Link>
           </section>
-        //   <CategoryCard key={name} name={t(`categories.${name}`)} />
         ))}
       </div>
 
