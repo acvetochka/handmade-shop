@@ -1,5 +1,4 @@
-import { HeroSection } from "@/sections/HeroSection/HeroSection";
-import { HomeCategory } from "@/sections/HomeCategory/HomeCategory";
+import { HeroSection, HomeCategory } from "@/sections";
 
 export default function HomePage() {
 
