@@ -20,6 +20,10 @@
         "title": "3D Printing",
         "description": "We specialize in 3D-printed souvenirs and decorative products. You can order custom models or choose from our catalog of ready-made 3D products."
       }
-    },"viewCatalog": "View catalog"
+    },"viewCatalog": "View catalog",
+    "products": {
+      "pageTitle": "Catalog",
+      "price": "Price"
+    }
   }
   

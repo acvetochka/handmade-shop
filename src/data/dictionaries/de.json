@@ -20,7 +20,11 @@
         "title": "3D-Druck",
         "description": "Wir spezialisieren uns auf 3D-gedruckte Souvenirs und dekorative Produkte. Sie können individuelle Modelle oder bereits fertige 3D-Produkte aus unserem Katalog bestellen."
       }
-    },"viewCatalog": "Zum Katalog"
+    },"viewCatalog": "Zum Katalog",
+    "products": {
+      "pageTitle": "Katalog",
+      "price": "Preis"
+    }
 
   }
   
