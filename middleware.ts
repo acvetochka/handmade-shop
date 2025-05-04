@@ -1,17 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { defaultLocale, locales } from './src/lib/i18n';
+import type { Locale } from './src/lib/i18n';
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // already has locale
   const pathnameIsMissingLocale = locales.every(
     locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
 
   if (pathnameIsMissingLocale) {
+    const cookieLocale = request.cookies.get('preferred-locale')?.value;
+
+    // Перевірка, що значення є в масиві допустимих локалей
+    const locale: Locale = locales.includes(cookieLocale as Locale)
+      ? (cookieLocale as Locale)
+      : defaultLocale;
+
     return NextResponse.redirect(
-      new URL(`/${defaultLocale}${pathname}`, request.url)
+      new URL(`/${locale}${pathname}`, request.url)
     );
   }
 
@@ -20,7 +27,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Match only top-level paths that don't start with a known locale
-    '/((?!_next|favicon.ico|assets|.*\\..*).*)',
+    '/((?!_next|favicon.ico|flags|.*\\..*).*)',
   ],
 };

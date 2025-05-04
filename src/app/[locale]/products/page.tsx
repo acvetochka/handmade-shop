@@ -16,10 +16,7 @@ export default function ProductsPage() {
 
   useEffect(() => {
     fetchProducts(locale).then(setProducts);
-  }, [locale]);
-
-  console.log(products);
-  
+  }, [locale]);  
   
   return (
     <div>
