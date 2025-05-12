@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import { fetchProducts } from '@/lib/strapi-api';
 // import { PHASE_PRODUCTION_SERVER } from 'next/dist/shared/lib/constants';
 import { useTranslation } from '@/i18n/I18nProvider';
+import { productItem, productList } from '@/styles/ProductsPage.styles';
 
 export default function ProductsPage() {
   const params = useParams();
@@ -21,22 +22,22 @@ export default function ProductsPage() {
   return (
     <div>
       <h1>{t("products.pageTitle")}</h1>
-      <div style={{ display: 'grid', gap: '20px' }}>
-        {products.map((item) => (
-          <div key={item.id} style={{ border: '1px solid #ccc', padding: '10px' }}>
-            <h2>{item.title}</h2>
+      <ul css={productList}>
+        {products.map((product) => (
+          <li key={product.id} css={productItem}>
+            <h2>{product.title}</h2>
             {/* <p>{item.description}</p> */}
-            {item.images[0] && (
+            {product.images[0] && (
               <img
-                src={`http://localhost:1337${item.images[0].url}`}
-                alt={item.title}
+                src={`http://localhost:1337${product.images[0].url}`}
+                alt={product.title}
                 width={200}
               />
             )}
-            <p>{t("products.price")}: {item.price} €</p>
-          </div>
+            <p>{t("products.price")}: {product.price} €</p>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }
