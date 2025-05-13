@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import { fetchProducts } from '@/lib/strapi-api';
-// import { PHASE_PRODUCTION_SERVER } from 'next/dist/shared/lib/constants';
 import { useTranslation } from '@/i18n/I18nProvider';
 import { productItem, productList } from '@/styles/ProductsPage.styles';
 
@@ -20,16 +19,15 @@ export default function ProductsPage() {
   }, [locale]);  
   
   return (
-    <div>
+    <section>
       <h1>{t("products.pageTitle")}</h1>
       <ul css={productList}>
         {products.map((product) => (
           <li key={product.id} css={productItem}>
             <h2>{product.title}</h2>
-            {/* <p>{item.description}</p> */}
             {product.images[0] && (
               <img
-                src={`http://localhost:1337${product.images[0].url}`}
+                src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${product.images[0].url}`}
                 alt={product.title}
                 width={200}
               />
@@ -38,6 +36,6 @@ export default function ProductsPage() {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }
