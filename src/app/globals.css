@@ -1,14 +1,20 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f0eae0;
+  /* #ead4d4,#f0eae0,#cee0e6,#c6b4d8,#f5c0bf */
+  --foreground: #2a221a;
+
+  --button-background: #ccadad;
+  /* --button-hover: #a99eb5; */
+  --button-hover: #b79d9d;
+
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 html,
 body {
@@ -35,8 +41,12 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
+
+
+/* box-shadow: 1px 1px 5px #5d2c13; */
+/* #ead4d4,#f0eae0,#cee0e6,#c6b4d8,#f5c0bf */

@@ -13,6 +13,8 @@ export const CategoryCard = ({ name }: { name: string }) => {
       <p>{t(`${name}.description`)}</p>
       <Link href={`/products/${name}`} css={categoryButton}>
         {t("viewCatalog")}
+        <span>&rarr;</span>
+        <p>fdjjdkd</p>
       </Link>
     </section>
   );
