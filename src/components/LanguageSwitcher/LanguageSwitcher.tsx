@@ -1,6 +1,6 @@
 'use client';
 
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useTransition, useState, useEffect } from 'react';
 import { locales } from '@/lib/i18n';
 import {
@@ -21,7 +21,7 @@ const localeToFlag: Record<string, string> = {
 
 export const LanguageSwitcher = () => {
   const pathname = usePathname();
-  const router = useRouter();
+  // const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [open, setOpen] = useState(false);
 

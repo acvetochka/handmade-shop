@@ -37,7 +37,7 @@ export const dropdownStyle = css`
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 5px;
-    background: #000000;
+    // background: #000000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 10;
     padding: 0;
@@ -48,10 +48,11 @@ export const dropdownItem = css`
   background: none;
   border: none;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: box-shadow 0.5s ease;
 
   &:hover {
-    background: #f0f0f0;
+    // background: #f0f0f0;
+    box-shadow: 1px 1px 5px #5d2c13;
   }
 `;
 
