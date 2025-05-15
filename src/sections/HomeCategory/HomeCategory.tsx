@@ -1,9 +1,4 @@
-"use client"
-
-import { categoryBox, categoryButton } from "@/components/CategoryCard/CategoryCard.styles";
-import { useTranslation } from "@/i18n/I18nProvider";
-import Link from "next/link";
-
+import { CategoryCard } from "@/components";
 
 const categoryList = [
   { name: 'kerzen', label: 'Свічки' },
@@ -14,18 +9,10 @@ const categoryList = [
 
 export const HomeCategory = () => {
 
-    const {t} = useTranslation();
-
     return (
       <div>
         {categoryList.map(({ name }) => (
-            <section key={name} css={categoryBox}>
-            <h2>{t(`categories.${name}.title`)}</h2>
-            <p>{t(`categories.${name}.description`)}</p>
-            <Link href={`/products/${name}`} css={categoryButton}>
-              {t("viewCatalog")}
-            </Link>
-          </section>
+          <CategoryCard key={name} name={name}/>
         ))}
       </div>
 
