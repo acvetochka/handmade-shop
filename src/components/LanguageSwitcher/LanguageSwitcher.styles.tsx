@@ -51,7 +51,6 @@ export const dropdownItem = css`
   transition: box-shadow 0.5s ease;
 
   &:hover {
-    // background: #f0f0f0;
     box-shadow: 1px 1px 5px #5d2c13;
   }
 `;
