@@ -1,0 +1,18 @@
+{
+  "kerzen": {
+    "title": "Candles",
+    "description": "For candles, we use only high-quality wax, not paraffin. Each candle can be tailored to various occasions, from molded candles to animal-shaped, angelic, Halloween-themed, and other designs."
+  },
+  "karten": {
+    "title": "Greeting Cards",
+    "description": "Our greeting cards are handmade, each card is unique and crafted with love. You can order cards for any occasion, including weddings, birthdays, Christmas, Easter, and more."
+  },
+  "gips": {
+    "title": "Gypsum Figures",
+    "description": "Our gypsum figures are wonderful decorative pieces for your home. Handcrafted, they make perfect gifts or decoration for any event."
+  },
+  "3d": {
+    "title": "3D Printing",
+    "description": "We specialize in 3D-printed souvenirs and decorative products. You can order custom models or choose from our catalog of ready-made 3D products."
+  }
+}
