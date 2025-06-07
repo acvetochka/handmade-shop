@@ -1,1 +1,2 @@
-export * from "./ContainerProps.props"
+export * from "./ContainerProps.props";
+export * from "./category";
