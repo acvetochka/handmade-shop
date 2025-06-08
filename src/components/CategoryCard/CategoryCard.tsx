@@ -1,19 +1,39 @@
 "use client";
 
-import { categoryBox, categoryDescription, categoryTitle } from "./CategoryCard.styles";
+import {
+  categoryBox,
+  categoryDescription,
+  categoryTitle,
+  categoryWrapper,
+  descriptionWrapper,
+  imageWrapper,
+} from "./CategoryCard.styles";
 import { useTranslation } from "@/i18n/I18nProvider";
 import { CategoryLink } from "../CategoryLink/CategoryLink";
 import { Container } from "../Container/Container";
 
-export const CategoryCard = ({ name }: { name: string }) => {
+export const CategoryCard = ({
+  name,
+  index,
+}: {
+  name: string;
+  index: number;
+}) => {
   const { t } = useTranslation();
 
   return (
-    <section css={categoryBox}>
+    <section css={categoryBox(index)}>
       <Container>
-      <h2 css={categoryTitle}>{t(`categories.${name}.title`)}</h2>
-      <p css={categoryDescription}>{t(`categories.${name}.description`)}</p>
-      <CategoryLink name={name}/>
+        <div css={categoryWrapper}>
+          <div css={imageWrapper(index)}></div>
+          <div css={descriptionWrapper(index)}>
+            <h2 css={categoryTitle}>{t(`categories.${name}.title`)}</h2>
+            <p css={categoryDescription}>
+              {t(`categories.${name}.description`)}
+            </p>
+            <CategoryLink name={name} />
+          </div>
+        </div>
       </Container>
     </section>
   );

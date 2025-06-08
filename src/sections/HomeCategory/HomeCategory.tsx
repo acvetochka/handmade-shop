@@ -10,8 +10,8 @@ const categoryList = [
 export const HomeCategory = (): JSX.Element => {
   return (
     <>
-      {categoryList.map(({ name }) => (
-        <CategoryCard key={name} name={name} />
+      {categoryList.map(({ name }, idx) => (
+        <CategoryCard key={name} name={name} index={idx} />
       ))}
     </>
   );
