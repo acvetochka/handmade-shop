@@ -1,17 +1,18 @@
 "use client";
 
 import { Container } from "@/components";
-// import { LanguageSwitcher } from "@/components";
 import { useTranslation } from "@/i18n/I18nProvider";
+import { heroSection, title } from "./HeroSection.styles";
 
 export const HeroSection = (): JSX.Element => {
   const { t } = useTranslation();
 
   return (
-    <Container>
-      {/* <LanguageSwitcher /> */}
-      <h1>{t("home.title")}</h1>
-      <p>{t("home.description")}</p>
-    </Container>
+    <section css={heroSection}>
+      <Container>
+        <h1 css={title}>{t("home.title")}</h1>
+        <p>{t("home.description")}</p>
+      </Container>
+    </section>
   );
 };
