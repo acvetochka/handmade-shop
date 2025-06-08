@@ -10,7 +10,7 @@ export const Header = (): JSX.Element => {
   const locale = params?.locale as string;
 
   return (
-    <header>
+    <header css={headerStyles}>
       <Container>
         <div css={headerStyles}>
           <Link href="/">Home</Link>
