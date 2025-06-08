@@ -17,7 +17,7 @@ import Image from "next/image";
 const localeToFlag: Record<string, string> = {
   de: "de.svg",
   en: "gb.svg",
-  uk: "ua.svg",
+  ua: "ua.svg",
 };
 
 export const LanguageSwitcher = () => {

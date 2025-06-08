@@ -1,16 +1,20 @@
+export type NestedDictionary = {
+  [key: string]: string | NestedDictionary;
+};
+
 export const flattenDictionary = (
-    obj: Record<string, any>,
-    parentKey = '',
-    result: Record<string, string> = {}
-  ): Record<string, string> => {
-    for (const key in obj) {
-      const fullKey = parentKey ? `${parentKey}.${key}` : key;
-      if (typeof obj[key] === 'object' && obj[key] !== null) {
-        flattenDictionary(obj[key], fullKey, result);
-      } else {
-        result[fullKey] = obj[key];
-      }
+  obj: NestedDictionary,
+  parentKey = "",
+  result: Record<string, string> = {}
+): Record<string, string> => {
+  for (const key in obj) {
+    const fullKey = parentKey ? `${parentKey}.${key}` : key;
+    const value = obj[key];
+    if (typeof value === "object" && value !== null) {
+      flattenDictionary(value, fullKey, result);
+    } else if (typeof value === "string") {
+      result[fullKey] = value;
     }
-    return result;
-  };
-  
+  }
+  return result;
+};
