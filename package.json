@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@strapi/types": "^5.17.0",
     "@types/i18next-browser-languagedetector": "^3.0.0",
     "@types/node": "^20",
     "@types/react": "^19",
