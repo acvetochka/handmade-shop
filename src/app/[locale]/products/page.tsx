@@ -6,6 +6,7 @@ import { fetchProducts } from "@/lib/strapi-api";
 import { useTranslation } from "@/i18n/I18nProvider";
 import { productItem, productList } from "@/styles/ProductsPage.styles";
 import Image from "next/image";
+import { Product } from "@/types";
 
 export default function ProductsPage() {
   const params = useParams();
@@ -13,7 +14,7 @@ export default function ProductsPage() {
 
   const { t } = useTranslation();
 
-  const [products, setProducts] = useState<any[]>([]);
+  const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     fetchProducts(locale).then(setProducts);
