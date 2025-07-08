@@ -10,7 +10,7 @@ import {
 } from "./CategoryCard.styles";
 import { useTranslation } from "@/i18n/I18nProvider";
 import { CategoryLink } from "../CategoryLink/CategoryLink";
-import { Container } from "../Container/Container";
+import { Container } from "../ui/Container/Container";
 
 export const CategoryCard = ({
   name,
@@ -22,7 +22,7 @@ export const CategoryCard = ({
   const { t } = useTranslation();
 
   return (
-    <section css={categoryBox(index)}>
+    <section id={t(`categories.${name}.id`)} css={categoryBox(index)}>
       <Container>
         <div css={categoryWrapper}>
           <div css={imageWrapper(index)}></div>
