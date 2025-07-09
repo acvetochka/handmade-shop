@@ -2,6 +2,7 @@
 
 import { InputProps } from "@/types";
 import { inputStyled, inputWrapper } from "./Input.styles";
+import { JSX } from "react";
 
 export const Input = ({
   type,

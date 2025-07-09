@@ -1,4 +1,5 @@
 import { CategoryCard } from "@/components";
+import { JSX } from "react";
 
 const categoryList = [
   { name: "kerzen", label: "Свічки" },

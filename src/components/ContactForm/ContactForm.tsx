@@ -11,6 +11,7 @@ import {
   inputWrapper,
   textareaStyled,
 } from "./ContactForm.styles";
+import { JSX } from "react";
 
 const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID as string;
 const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
@@ -22,7 +23,7 @@ type FormData = {
   message: string;
 };
 
-export const ContactForm = () => {
+export const ContactForm = (): JSX.Element => {
   const {
     register,
     handleSubmit,

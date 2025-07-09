@@ -11,6 +11,7 @@ import {
 import { useTranslation } from "@/i18n/I18nProvider";
 import { CategoryLink } from "../CategoryLink/CategoryLink";
 import { Container } from "../ui/Container/Container";
+import { JSX } from "react";
 
 export const CategoryCard = ({
   name,
@@ -18,7 +19,7 @@ export const CategoryCard = ({
 }: {
   name: string;
   index: number;
-}) => {
+}): JSX.Element => {
   const { t } = useTranslation();
 
   return (

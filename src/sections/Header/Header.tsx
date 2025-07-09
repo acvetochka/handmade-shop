@@ -4,6 +4,7 @@ import { Container, LanguageSwitcher } from "@/components";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { headerStyles } from "./Header.styles";
+import { JSX } from "react";
 
 export const Header = (): JSX.Element => {
   const params = useParams();

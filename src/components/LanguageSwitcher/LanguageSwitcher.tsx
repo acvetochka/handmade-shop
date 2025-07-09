@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useTransition, useState, useEffect } from "react";
+import { useTransition, useState, useEffect, JSX } from "react";
 import { locales } from "@/lib/i18n";
 import {
   switcherWrapper,
@@ -20,7 +20,7 @@ const localeToFlag: Record<string, string> = {
   ua: "ua.svg",
 };
 
-export const LanguageSwitcher = () => {
+export const LanguageSwitcher = (): JSX.Element => {
   const pathname = usePathname();
   // const router = useRouter();
   const [, startTransition] = useTransition();
