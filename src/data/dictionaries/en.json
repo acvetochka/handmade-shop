@@ -33,5 +33,32 @@
   "products": {
     "pageTitle": "Catalog",
     "price": "Price"
-  }
+  },
+  "navigation": [
+    {
+      "id": 1,
+      "title": "Candles",
+      "link": "kerzen"
+    },
+    {
+      "id": 2,
+      "title": "Greeting Cards",
+      "link": "karten"
+    },
+    {
+      "id": 3,
+      "title": "Gypsum Figures",
+      "link": "gips"
+    },
+    {
+      "id": 4,
+      "title": "3D Printing",
+      "link": "3d"
+    },
+    {
+      "id": 5,
+      "title": "Contacts",
+      "link": "kontakte"
+    }
+  ]
 }

@@ -33,5 +33,32 @@
   "products": {
     "pageTitle": "Katalog",
     "price": "Preis"
-  }
+  },
+  "navigation": [
+    {
+      "id": 1,
+      "title": "Kerzen",
+      "link": "kerzen"
+    },
+    {
+      "id": 2,
+      "title": "Grußkarten",
+      "link": "karten"
+    },
+    {
+      "id": 3,
+      "title": "Gipsfiguren",
+      "link": "gips"
+    },
+    {
+      "id": 4,
+      "title": "3D-Druck",
+      "link": "3d"
+    },
+    {
+      "id": 5,
+      "title": "Kontakte",
+      "link": "kontakte"
+    }
+  ]
 }

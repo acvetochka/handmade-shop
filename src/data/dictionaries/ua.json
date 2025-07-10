@@ -33,5 +33,32 @@
   "products": {
     "pageTitle": "Каталог товарів",
     "price": "Ціна"
-  }
+  },
+  "navigation": [
+    {
+      "id": 1,
+      "title": "Свічки",
+      "link": "kerzen"
+    },
+    {
+      "id": 2,
+      "title": "Листівки",
+      "link": "karten"
+    },
+    {
+      "id": 3,
+      "title": "Гіпсові фігури",
+      "link": "gips"
+    },
+    {
+      "id": 4,
+      "title": "3D-друк",
+      "link": "3d"
+    },
+    {
+      "id": 5,
+      "title": "Контакти",
+      "link": "kontakte"
+    }
+  ]
 }
