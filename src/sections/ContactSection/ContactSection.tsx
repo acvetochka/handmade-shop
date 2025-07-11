@@ -7,6 +7,7 @@ import {
   contactWrapper,
   itemStyled,
   listStyled,
+  textStyled,
 } from "./ContactSection.styles";
 import { JSX } from "react";
 import contacts from "@/data/contacts.json";
@@ -19,12 +20,12 @@ export const ContactSection = (): JSX.Element => {
           <ul css={listStyled}>
             {contacts.map(({ name, type, link }, id) => (
               <li css={itemStyled} key={id}>
-                <p>{type}:</p>
+                <p css={textStyled}>{type}:</p>
                 <a href={link}>{name}</a>
               </li>
             ))}
             <li css={itemStyled}>
-              <p>Location:</p>
+              <p css={textStyled}>Location:</p>
               <span>Germany, Bavaria</span>
             </li>
           </ul>

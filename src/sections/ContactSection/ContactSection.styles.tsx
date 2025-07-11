@@ -42,3 +42,7 @@ export const itemStyled = css`
     width: 70px;
   }
 `;
+
+export const textStyled = css`
+  text-align: start;
+`;
