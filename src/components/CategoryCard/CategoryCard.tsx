@@ -9,7 +9,7 @@ import {
   imageWrapper,
 } from "./CategoryCard.styles";
 import { useTranslation } from "@/i18n/I18nProvider";
-import { CategoryLink } from "../CategoryLink/CategoryLink";
+// import { CategoryLink } from "../CategoryLink/CategoryLink";
 import { Container } from "../ui/Container/Container";
 import { JSX } from "react";
 
@@ -32,7 +32,7 @@ export const CategoryCard = ({
             <p css={categoryDescription}>
               {t(`categories.${name}.description`)}
             </p>
-            <CategoryLink name={name} />
+            {/* <CategoryLink name={name} /> */}
           </div>
         </div>
       </Container>

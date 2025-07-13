@@ -15,8 +15,13 @@ export const categoryBox = (index: number) => css`
 
 export const categoryWrapper = css`
   display: flex;
+  flex-direction: column;
   padding: 40px 0;
   align-items: space-between;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 export const imageWrapper = (index: number) => css`
@@ -25,17 +30,20 @@ export const imageWrapper = (index: number) => css`
 `;
 
 export const descriptionWrapper = (index: number) => css`
-  width: 40%;
   order: ${index % 2 === 0 ? 1 : 2};
   // text-align: ${index % 2 === 0 ? "start" : "end"};
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   align-items: ${index % 2 ? "flex-end" : "flex-start"};
+
+  @media screen and (min-width: 768px) {
+    width: 40%;
+  }
 `;
 
 export const categoryTitle = css`
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 `;
 
 export const categoryDescription = css`
