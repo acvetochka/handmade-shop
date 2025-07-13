@@ -31,7 +31,7 @@ export const menuButton = css`
   }
 
   & svg {
-    fill: white;
+    fill: #2a221a;
   }
 
   @media (min-width: 768px) {

@@ -1,7 +1,8 @@
 {
   "home": {
-    "title": "Willkommen in unserem Shop!",
-    "description": "Entdecken Sie handgefertigte Kerzen, Grußkarten, Gipsfiguren und 3D-Druckprodukte."
+    "title": "Willkommen in meiner Handwerk-Ecke!",
+    "description": "Entdecken Sie handgefertigte Kerzen, Grußkarten, Gipsfiguren und 3D-Druckprodukte.",
+    "warning": "Die Website befindet sich aktuell im Aufbau und wird bis zum 16.Juli 2025 fertiggestellt. Sie können mich jedoch bereits jetzt über die Kontaktdaten am Ende der Seite erreichen"
   },
   "categories": {
     "kerzen": {

@@ -1,26 +1,26 @@
 {
-    "home": {
-      "title": "Willkommen in unserem Shop!",
-      "description": "Entdecken Sie handgefertigte Kerzen, Grußkarten, Gipsfiguren und 3D-Druckprodukte."
+  "home": {
+    "title": "Willkommen in meiner Handwerk-Ecke!",
+    "description": "Entdecken Sie handgefertigte Kerzen, Grußkarten, Gipsfiguren und 3D-Druckprodukte.",
+    "warning": "Die Website befindet sich aktuell im Aufbau und wird bis zum 16.Juli 2025 fertiggestellt. Sie können mich jedoch bereits jetzt über die Kontaktdaten am Ende der Seite erreichen"
+  },
+  "categories": {
+    "kerzen": {
+      "title": "Kerzen",
+      "description": "Für Kerzen verwenden wir nur hochwertiges Wachs, nicht Paraffin. Jede Kerze kann für verschiedene Anlässe geeignet sein, von Formkerzen bis hin zu Kerzen in Tierform, Engeln, Halloween und anderen Themen."
     },
-    "categories": {
-      "kerzen": {
-        "title": "Kerzen",
-        "description": "Für Kerzen verwenden wir nur hochwertiges Wachs, nicht Paraffin. Jede Kerze kann für verschiedene Anlässe geeignet sein, von Formkerzen bis hin zu Kerzen in Tierform, Engeln, Halloween und anderen Themen."
-      },
-      "karten": {
-        "title": "Grußkarten",
-        "description": "Unsere Grußkarten sind handgemacht, jede Karte ist einzigartig und wird mit viel Liebe hergestellt. Sie können Karten für jeden Anlass bestellen, darunter Hochzeiten, Geburtstagsfeiern und mehr."
-      },
-      "gips": {
-        "title": "Gipsfiguren",
-        "description": "Unsere Gipsfiguren sind wundervolle Dekorationsstücke für Ihr Zuhause. Handgefertigt, sie sind einzigartige Geschenke oder Dekorationen für jeden Anlass."
-      },
-      "3d": {
-        "title": "3D-Druck",
-        "description": "Wir spezialisieren uns auf 3D-gedruckte Souvenirs und dekorative Produkte. Sie können individuelle Modelle oder bereits fertige 3D-Produkte aus unserem Katalog bestellen."
-      }
-    },"viewCatalog": "Переглянути каталог"
-
-  }
-  
+    "karten": {
+      "title": "Grußkarten",
+      "description": "Unsere Grußkarten sind handgemacht, jede Karte ist einzigartig und wird mit viel Liebe hergestellt. Sie können Karten für jeden Anlass bestellen, darunter Hochzeiten, Geburtstagsfeiern und mehr."
+    },
+    "gips": {
+      "title": "Gipsfiguren",
+      "description": "Unsere Gipsfiguren sind wundervolle Dekorationsstücke für Ihr Zuhause. Handgefertigt, sie sind einzigartige Geschenke oder Dekorationen für jeden Anlass."
+    },
+    "3d": {
+      "title": "3D-Druck",
+      "description": "Wir spezialisieren uns auf 3D-gedruckte Souvenirs und dekorative Produkte. Sie können individuelle Modelle oder bereits fertige 3D-Produkte aus unserem Katalog bestellen."
+    }
+  },
+  "viewCatalog": "Переглянути каталог"
+}

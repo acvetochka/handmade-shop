@@ -3,7 +3,11 @@ import { Link } from "react-scroll";
 
 import { ScrollLinkProps } from "@/types";
 
-const ScrollLink = ({ children, to }: ScrollLinkProps): JSX.Element => {
+const ScrollLink = ({
+  children,
+  to,
+  onClick,
+}: ScrollLinkProps): JSX.Element => {
   return (
     <Link
       to={to}
@@ -12,6 +16,7 @@ const ScrollLink = ({ children, to }: ScrollLinkProps): JSX.Element => {
       duration={500}
       href="/"
       className="link"
+      onClick={onClick}
     >
       {children}
     </Link>
