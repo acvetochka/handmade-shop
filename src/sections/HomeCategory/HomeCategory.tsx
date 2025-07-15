@@ -1,5 +1,5 @@
-import { CategoryCard } from "@/components";
 import { JSX } from "react";
+import { CategoryCard } from "@/components";
 
 const categoryList = [
   { name: "kerzen", label: "Свічки" },

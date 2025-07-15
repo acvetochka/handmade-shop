@@ -1,3 +1,5 @@
+"use client";
+
 import {
   //   StyledMobileMenu,
   menuWrapper,
@@ -9,9 +11,6 @@ import { JSX } from "react";
 import { MobileMenuProps } from "@/types/mobileMenu.props";
 import { Container, ScrollLink } from "@/components";
 import { useNavigation } from "@/hooks/useNavigation";
-// import ScrollLink from "../ui/ScrollLink/ScrollLink";
-// import { Link } from "react-scroll";
-// import {}
 
 export const MobileMenu = ({
   isOpen = false,

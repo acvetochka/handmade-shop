@@ -1,9 +1,9 @@
 "use client";
 
-import { Container, ScrollLink } from "@/components";
-import { useTranslation } from "@/i18n/I18nProvider";
-import { heroSection, linkStyled, title, warning } from "./HeroSection.styles";
 import { JSX } from "react";
+import { Container, ScrollLink } from "@/components";
+import { useTranslation } from "@/providers/I18nProvider";
+import { heroSection, linkStyled, title, warning } from "./HeroSection.styles";
 // import { categoryButton } from "@/components/CategoryLink/CategoryLink.styles";
 
 export const HeroSection = (): JSX.Element => {

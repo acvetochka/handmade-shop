@@ -9,7 +9,7 @@ export const Navigation = (): JSX.Element => {
   const navigation = useNavigation();
 
   return (
-    <ul css={navList} className="nav-list">
+    <ul css={navList}>
       {navigation.map(({ id, title, link }) => (
         <li key={id}>
           <ScrollLink to={link}>{title}</ScrollLink>
