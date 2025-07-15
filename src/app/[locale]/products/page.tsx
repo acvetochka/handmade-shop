@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { fetchProducts } from "@/lib/strapi-api";
-import { useTranslation } from "@/i18n/I18nProvider";
+import { useTranslation } from "@/providers/I18nProvider";
 import { productItem, productList } from "@/styles/ProductsPage.styles";
 import Image from "next/image";
 import { Product } from "@/types";

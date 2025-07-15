@@ -1,28 +1,28 @@
-import { getDictionary } from '@/lib/getDictionary';
-import { I18nProvider } from '@/i18n/I18nProvider';
-import { Locale, locales } from '@/lib/i18n';
-import { flattenDictionary } from '@/lib/flattenDictionary';
-import { Header } from '@/sections';
+import { flattenDictionary, getDictionary, Locale, locales } from "@/lib";
+import Providers from "@/providers/Providers";
+import { Header } from "@/sections";
 
 export async function generateStaticParams() {
-  return locales.map(locale => ({ locale }));
+  return locales.map((locale) => ({ locale }));
 }
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
+export default async function LocaleLayout(props: {
   children: React.ReactNode;
   params: { locale: Locale };
 }) {
-  const rawDictionary = await getDictionary(params.locale);
-  const dictionary = flattenDictionary(rawDictionary);
+  const { params } = props;
+  const locale = params.locale;
+
+  const rawDictionary = await getDictionary(locale);
+  const dictionary = flattenDictionary({ obj: rawDictionary });
+
+  console.log("rawDictionary", rawDictionary);
 
   return (
-    <I18nProvider dictionary={dictionary}>
+    <Providers dictionary={dictionary}>
       <Header />
-      <main>{children}</main>
+      <main>{props.children}</main>
       {/* <Footer /> */}
-    </I18nProvider>
+    </Providers>
   );
 }
