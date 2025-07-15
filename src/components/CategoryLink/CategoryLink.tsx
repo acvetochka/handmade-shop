@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useTranslation } from "@/i18n/I18nProvider";
+import { useTranslation } from "@/providers/I18nProvider";
 import { categoryButton } from "./CategoryLink.styles";
 import { JSX } from "react";
 

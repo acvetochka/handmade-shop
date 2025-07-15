@@ -8,10 +8,12 @@ import {
   descriptionWrapper,
   imageWrapper,
 } from "./CategoryCard.styles";
-import { useTranslation } from "@/i18n/I18nProvider";
-// import { CategoryLink } from "../CategoryLink/CategoryLink";
+import { useTranslation } from "@/providers/I18nProvider";
 import { Container } from "../ui/Container/Container";
 import { JSX } from "react";
+import { cardsImages } from "@/data/images";
+import { ImageSlider } from "../ImageSlider/ImageSlider";
+// import { useTranslation } from "@/providers";
 
 export const CategoryCard = ({
   name,
@@ -22,17 +24,22 @@ export const CategoryCard = ({
 }): JSX.Element => {
   const { t } = useTranslation();
 
+  console.log(t("categories.kerzen.title"));
+
   return (
     <section id={t(`categories.${name}.id`)} css={categoryBox(index)}>
       <Container>
         <div css={categoryWrapper}>
-          <div css={imageWrapper(index)}></div>
           <div css={descriptionWrapper(index)}>
             <h2 css={categoryTitle}>{t(`categories.${name}.title`)}</h2>
             <p css={categoryDescription}>
               {t(`categories.${name}.description`)}
             </p>
             {/* <CategoryLink name={name} /> */}
+          </div>
+
+          <div css={imageWrapper(index)}>
+            <ImageSlider images={cardsImages} />
           </div>
         </div>
       </Container>
