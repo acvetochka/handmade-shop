@@ -1,13 +1,5 @@
 // ⚠️ Auto-generated file. Do not edit manually.
 
-export const threeDPrintImages = [
-  "/images/threeDPrint/photo_2025-07-15_22-18-11 (2).jpg",
-  "/images/threeDPrint/photo_2025-07-15_22-18-11 (3).jpg",
-  "/images/threeDPrint/photo_2025-07-15_22-18-11.jpg",
-  "/images/threeDPrint/photo_2025-07-15_22-18-14 (5).jpg",
-  "/images/threeDPrint/photo_2025-07-15_22-18-14.jpg",
-];
-
 export const candlesImages = [
   "/images/candles/photo_2025-07-15_22-18-11 (2).jpg",
   "/images/candles/photo_2025-07-15_22-18-12 (2).jpg",
@@ -28,14 +20,10 @@ export const candlesImages = [
   "/images/candles/photo_2025-07-15_22-18-14 (3).jpg",
   "/images/candles/photo_2025-07-15_22-18-14 (4).jpg",
   "/images/candles/photo_2025-07-15_22-18-14 (7).jpg",
-  "/images/candles/photo_2025-07-15_22-18-14.jpg",
+  "/images/candles/photo_2025-07-15_22-18-14.jpg"
 ];
 
 export const cardsImages = [
-  "/images/cards/01.jpg",
-  "/images/cards/02.jpg",
-  "/images/cards/03.jpg",
-  "/images/cards/04.jpg",
   "/images/cards/05.jpg",
   "/images/cards/photo_2025-07-15_22-18-10 (10).jpg",
   "/images/cards/photo_2025-07-15_22-18-10 (2).jpg",
@@ -48,7 +36,7 @@ export const cardsImages = [
   "/images/cards/photo_2025-07-15_22-18-10 (9).jpg",
   "/images/cards/photo_2025-07-15_22-18-10.jpg",
   "/images/cards/photo_2025-07-15_22-18-11 (2).jpg",
-  "/images/cards/photo_2025-07-15_22-18-11.jpg",
+  "/images/cards/photo_2025-07-15_22-18-11.jpg"
 ];
 
 export const gipsImages = [
@@ -65,5 +53,13 @@ export const gipsImages = [
   "/images/gips/photo_2025-07-15_22-18-14 (4).jpg",
   "/images/gips/photo_2025-07-15_22-18-14 (5).jpg",
   "/images/gips/photo_2025-07-15_22-18-14 (6).jpg",
-  "/images/gips/photo_2025-07-15_22-18-14.jpg",
+  "/images/gips/photo_2025-07-15_22-18-14.jpg"
+];
+
+export const threeDPrintImages = [
+  "/images/threeDPrint/photo_2025-07-15_22-18-11 (2).jpg",
+  "/images/threeDPrint/photo_2025-07-15_22-18-11 (3).jpg",
+  "/images/threeDPrint/photo_2025-07-15_22-18-11.jpg",
+  "/images/threeDPrint/photo_2025-07-15_22-18-14 (5).jpg",
+  "/images/threeDPrint/photo_2025-07-15_22-18-14.jpg"
 ];
