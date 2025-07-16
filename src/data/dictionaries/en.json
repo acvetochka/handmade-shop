@@ -2,32 +2,33 @@
   "home": {
     "title": "Welcome to our shop!",
     "description": "Here you'll find handmade candles, greeting cards, gypsum figures, and 3D printed products.",
-    "warning": "Website is currently being updated and will be fully available by July 16th, 2025. In the meantime, feel free to reach out to me using the contact information at the bottom of the page:"
+    "warning": "The website is currently being updated. Very soon, you'll be able to explore the full range of products and place orders online. In the meantime, feel free to get in touch using the contact details at the bottom of the page:",
+    "contactButton": "Contacts"
   },
   "categories": {
-    "kerzen": {
-      "id": "kerzen",
+    "candles": {
+      "id": "candles",
       "title": "Candles",
       "description": "For candles, we use only high-quality wax, not paraffin. Each candle can be tailored to various occasions, from molded candles to animal-shaped, angelic, Halloween-themed, and other designs.",
-      "image": ""
+      "image": "candles"
     },
-    "karten": {
-      "id": "karten",
+    "cards": {
+      "id": "cards",
       "title": "Greeting Cards",
       "description": "Our greeting cards are handmade, each card is unique and crafted with love. You can order cards for any occasion, including weddings, birthdays, Christmas, Easter, and more.",
-      "image": ""
+      "image": "cards"
     },
     "gips": {
       "id": "gips",
       "title": "Gypsum Figures",
       "description": "Our gypsum figures are wonderful decorative pieces for your home. Handcrafted, they make perfect gifts or decoration for any event.",
-      "image": ""
+      "image": "gips"
     },
-    "3d": {
-      "id": "3d",
+    "print": {
+      "id": "print",
       "title": "3D Printing",
       "description": "We specialize in 3D-printed souvenirs and decorative products. You can order custom models or choose from our catalog of ready-made 3D products.",
-      "image": ""
+      "image": "print"
     }
   },
   "viewCatalog": "View catalog",
@@ -61,5 +62,27 @@
       "title": "Contacts",
       "link": "kontakte"
     }
-  ]
+  ],
+  "contactForm": {
+    "name": {
+      "label": "Name",
+      "placeholder": "Enter your name",
+      "required": "Name is required"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter your email",
+      "required": "Email is required",
+      "invalid": "Invalid email address"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Write your message here",
+      "required": "Message is required"
+    },
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Error sending message."
+  }
 }
