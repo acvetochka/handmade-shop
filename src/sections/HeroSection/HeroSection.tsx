@@ -14,7 +14,7 @@ export const HeroSection = (): JSX.Element => {
       <Container>
         <div css={warning}>
           <p>{t("home.warning")}</p>
-          <ScrollLink to="kontakte" css={linkStyled}>
+          <ScrollLink to="contacts" css={linkStyled}>
             <p css={linkStyled}>{t("home.contactButton")}</p>
           </ScrollLink>
         </div>
