@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect } from "react";
+import { createContext, useContext } from "react";
 
 export type Dictionary = Record<string, string>;
 
@@ -20,10 +20,6 @@ export const I18nProvider = ({
   dictionary: Dictionary;
   children: React.ReactNode;
 }) => {
-  useEffect(() => {
-    console.log("Flattened dictionary keys:", Object.keys(dictionary));
-  }, [dictionary]);
-
   return (
     <I18nContext.Provider value={dictionary}>{children}</I18nContext.Provider>
   );
