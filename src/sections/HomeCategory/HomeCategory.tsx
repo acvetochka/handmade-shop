@@ -2,10 +2,10 @@ import { JSX } from "react";
 import { CategoryCard } from "@/components";
 
 const categoryList = [
-  { name: "kerzen", label: "Свічки" },
-  { name: "karten", label: "Листівки" },
-  { name: "gips", label: "Гіпсові фігури" },
-  { name: "3d", label: "3D-друк" },
+  { name: "candles", label: "Свічки", id: "kerzen" },
+  { name: "cards", label: "Листівки", id: "karten" },
+  { name: "gips", label: "Гіпсові фігури", id: "gips" },
+  { name: "print", label: "3D-друк", id: "3d" },
 ];
 
 export const HomeCategory = (): JSX.Element => {

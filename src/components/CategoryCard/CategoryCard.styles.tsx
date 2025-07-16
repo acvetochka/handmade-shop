@@ -38,9 +38,9 @@ export const descriptionWrapper = (index: number) => css`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: ${index % 2 ? "flex-end" : "flex-start"};
 
   @media screen and (min-width: 1440px) {
-    align-items: ${index % 2 ? "flex-end" : "flex-start"};
     width: 40%;
     order: ${index % 2 === 0 ? 1 : 2};
   }
