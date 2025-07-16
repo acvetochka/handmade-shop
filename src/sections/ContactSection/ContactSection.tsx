@@ -11,6 +11,7 @@ import {
 } from "./ContactSection.styles";
 import { JSX } from "react";
 import contacts from "@/data/contacts.json";
+// import { useTranslation } from "@/providers";
 
 export const ContactSection = (): JSX.Element => {
   return (

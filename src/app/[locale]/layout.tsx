@@ -16,8 +16,6 @@ export default async function LocaleLayout(props: {
   const rawDictionary = await getDictionary(locale);
   const dictionary = flattenDictionary({ obj: rawDictionary });
 
-  console.log("rawDictionary", rawDictionary);
-
   return (
     <Providers dictionary={dictionary}>
       <Header />

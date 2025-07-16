@@ -8,7 +8,6 @@ import {
   Container,
   LanguageSwitcher,
   MobileMenu,
-  // MobileMenu,
   Navigation,
 } from "@/components";
 import { headerStyles, menuButton, navWrapperStyles } from "./Header.styles";
@@ -25,23 +24,6 @@ export const HeaderComponent = (): JSX.Element => {
     setIsClient(true);
   }, []);
 
-  // useEffect(() => {
-  //   if (isClient) {
-  //     if (isMobileMenuOpen) {
-  //       document.documentElement.classList.add("no-scroll");
-  //       document.body.classList.add("no-scroll");
-  //     } else {
-  //       document.documentElement.classList.remove("no-scroll");
-  //       document.body.classList.remove("no-scroll");
-  //     }
-  //   }
-  // }, [isMobileMenuOpen, isClient]);
-
-  // const toggleMobileMenu = (event?: React.MouseEvent) => {
-  //   if (event) event.preventDefault(); // Запобігає зміні позиції скролу
-  //   setIsMobileMenuOpen((prev) => !prev);
-  // };
-
   return (
     <header css={headerStyles}>
       <Container>
@@ -55,12 +37,8 @@ export const HeaderComponent = (): JSX.Element => {
               <button
                 css={menuButton}
                 type="button"
-                // onClick={toggleMobileMenu}
                 onClick={toggleMenu}
-                aria-label={
-                  // isMobileMenuOpen ? "close-menu-button" : "open-menu-button"
-                  isOpen ? "close-menu-button" : "open-menu-button"
-                }
+                aria-label={isOpen ? "close-menu-button" : "open-menu-button"}
               >
                 {isOpen ? <MdClose size={24} /> : <MdMenu size={24} />}
               </button>

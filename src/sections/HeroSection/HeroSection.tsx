@@ -14,13 +14,8 @@ export const HeroSection = (): JSX.Element => {
       <Container>
         <div css={warning}>
           <p>{t("home.warning")}</p>
-          {/* <p>
-            Die Website befindet sich aktuell im Aufbau und wird bis zum 16.Juli
-            2025 fertiggestellt. Sie können mich jedoch bereits jetzt über die
-            Kontaktdaten am Ende der Seite erreichen
-          </p> */}
           <ScrollLink to="kontakte" css={linkStyled}>
-            <p css={linkStyled}>Kontakte</p>
+            <p css={linkStyled}>{t("home.contactButton")}</p>
           </ScrollLink>
         </div>
         <h1 css={title}>{t("home.title")}</h1>
