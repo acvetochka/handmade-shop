@@ -40,12 +40,12 @@
     {
       "id": 1,
       "title": "Свічки",
-      "link": "kerzen"
+      "link": "candles"
     },
     {
       "id": 2,
       "title": "Листівки",
-      "link": "karten"
+      "link": "cards"
     },
     {
       "id": 3,
@@ -55,12 +55,12 @@
     {
       "id": 4,
       "title": "3D-друк",
-      "link": "3d"
+      "link": "print"
     },
     {
       "id": 5,
       "title": "Контакти",
-      "link": "kontakte"
+      "link": "contacts"
     }
   ],
   "contactForm": {

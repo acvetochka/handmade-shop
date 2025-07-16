@@ -15,7 +15,7 @@ import contacts from "@/data/contacts.json";
 
 export const ContactSection = (): JSX.Element => {
   return (
-    <section id="kontakte" css={contactSection}>
+    <section id="contacts" css={contactSection}>
       <Container>
         <div css={contactWrapper}>
           <ul css={listStyled}>
