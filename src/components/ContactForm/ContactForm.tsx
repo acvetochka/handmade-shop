@@ -1,9 +1,10 @@
 "use client";
 
+import { JSX } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 
-import { Input } from "../ui/Input/Input";
+import { Input } from "@/components";
 import inputData from "@/data/inputData.json";
 import {
   buttonStyled,
@@ -11,7 +12,7 @@ import {
   inputWrapper,
   textareaStyled,
 } from "./ContactForm.styles";
-import { JSX } from "react";
+import { useTranslation } from "@/providers";
 
 const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID as string;
 const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
@@ -24,6 +25,8 @@ type FormData = {
 };
 
 export const ContactForm = (): JSX.Element => {
+  const { t } = useTranslation();
+
   const {
     register,
     handleSubmit,
@@ -35,29 +38,29 @@ export const ContactForm = (): JSX.Element => {
     try {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, data, USER_ID);
       reset();
-      alert("Message sent successfully!");
+      alert(t("contactForm.success"));
     } catch (error) {
       console.error(error);
-      alert("Error sending message.");
+      alert(t("contactForm.error"));
     }
   };
 
   return (
     <form css={formStyled} onSubmit={handleSubmit(onSubmit)}>
-      {inputData.map(({ type, name, label, placeholder }) => (
+      {inputData.map(({ type, name }) => (
         <Input
           key={name}
           type={type}
-          label={label}
+          label={t(`contactForm.${name}.label`)}
           name={name}
-          placeholder={placeholder}
+          placeholder={t(`contactForm.${name}.placeholder`)}
           register={register(name as keyof FormData, {
-            required: `${label} is required`,
+            required: t(`contactForm.${name}.required`),
             ...(name === "email"
               ? {
                   pattern: {
                     value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                    message: "Invalid email address",
+                    message: t("contactForm.email.invalid"),
                   },
                 }
               : {}),
@@ -68,11 +71,13 @@ export const ContactForm = (): JSX.Element => {
 
       <div css={inputWrapper}>
         <label>
-          Message
+          {t("contactForm.message.label")}
           <textarea
             css={textareaStyled}
-            placeholder="Write your message here"
-            {...register("message", { required: "Message is required" })}
+            placeholder={t("contactForm.message.placeholder")}
+            {...register("message", {
+              required: t("contactForm.message.required"),
+            })}
           />
           {errors.message && (
             <span style={{ color: "red", fontSize: "0.875rem" }}>
@@ -88,7 +93,7 @@ export const ContactForm = (): JSX.Element => {
         className="has-button"
         disabled={isSubmitting}
       >
-        {isSubmitting ? "Sending..." : "Send"}
+        {isSubmitting ? t("contactForm.sending") : t("contactForm.send")}
       </button>
     </form>
   );
