@@ -1,28 +1,37 @@
-import { flattenDictionary, getDictionary, Locale, locales } from "@/lib";
-import Providers from "@/providers/Providers";
+import { ReactNode } from "react";
 import { Header } from "@/sections";
+import Providers from "@/providers/Providers";
+import { flattenDictionary, getDictionary, Locale, locales } from "@/lib";
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default async function LocaleLayout({
+export default function LocaleLayout({
   children,
   params,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   params: { locale: Locale };
 }) {
-  const locale = params.locale;
-
-  const rawDictionary = await getDictionary(locale);
-  const dictionary = flattenDictionary({ obj: rawDictionary });
-
   return (
-    <Providers dictionary={dictionary}>
+    <ProvidersWrapper locale={params.locale}>
       <Header />
       <main>{children}</main>
       {/* <Footer /> */}
-    </Providers>
+    </ProvidersWrapper>
   );
+}
+
+async function ProvidersWrapper({
+  children,
+  locale,
+}: {
+  children: ReactNode;
+  locale: Locale;
+}) {
+  const rawDictionary = await getDictionary(locale);
+  const dictionary = flattenDictionary({ obj: rawDictionary });
+
+  return <Providers dictionary={dictionary}>{children}</Providers>;
 }
