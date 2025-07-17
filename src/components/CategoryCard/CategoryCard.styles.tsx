@@ -48,9 +48,20 @@ export const descriptionWrapper = (index: number) => css`
 
 export const categoryTitle = css`
   // margin-bottom: 20px;
+  font-size: 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+  }
 `;
 
 export const categoryDescription = css`
   margin-bottom: 20px;
   text-align: justify;
+  font-size: 16px;
+  line-height: 24px;
 `;

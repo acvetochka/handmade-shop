@@ -84,5 +84,27 @@
     "sending": "Sending...",
     "success": "Message sent successfully!",
     "error": "Error sending message."
+  },
+  "contacts": {
+    "title": "Contacts",
+    "locationLabel": "Location",
+    "location": "Germany, Bavaria"
+  },
+  "contactList": {
+    "email": {
+      "name": "acvetochka@gmail.com",
+      "label": "email",
+      "link": "mailto:acvetochka@gmail.com"
+    },
+    "phone": {
+      "name": "+4915141896120",
+      "label": "phone",
+      "link": "tel:+4915141896120"
+    },
+    "whatsapp": {
+      "name": "+380961270693",
+      "label": "whatsapp",
+      "link": "https://wa.me/30961270693"
+    }
   }
 }

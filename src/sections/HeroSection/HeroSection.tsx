@@ -3,7 +3,13 @@
 import { JSX } from "react";
 import { Container, ScrollLink } from "@/components";
 import { useTranslation } from "@/providers/I18nProvider";
-import { heroSection, linkStyled, title, warning } from "./HeroSection.styles";
+import {
+  heroSection,
+  linkStyled,
+  text,
+  title,
+  warning,
+} from "./HeroSection.styles";
 // import { categoryButton } from "@/components/CategoryLink/CategoryLink.styles";
 
 export const HeroSection = (): JSX.Element => {
@@ -19,7 +25,7 @@ export const HeroSection = (): JSX.Element => {
           </ScrollLink>
         </div>
         <h1 css={title}>{t("home.title")}</h1>
-        <p>{t("home.description")}</p>
+        <p css={text}>{t("home.description")}</p>
       </Container>
     </section>
   );

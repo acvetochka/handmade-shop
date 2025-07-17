@@ -84,5 +84,27 @@
     "sending": "Надсилається...",
     "success": "Повідомлення надіслано успішно!",
     "error": "Помилка надсилання повідомлення."
+  },
+  "contacts": {
+    "title": "Контакти",
+    "locationLabel": "Місцезнаходження",
+    "location": "Німеччина, Баварія"
+  },
+  "contactList": {
+    "email": {
+      "name": "acvetochka@gmail.com",
+      "label": "Електронна пошта",
+      "link": "mailto:acvetochka@gmail.com"
+    },
+    "phone": {
+      "name": "+4915141896120",
+      "label": "Телефон",
+      "link": "tel:+4915141896120"
+    },
+    "whatsapp": {
+      "name": "+380961270693",
+      "label": "WhatsApp",
+      "link": "https://wa.me/30961270693"
+    }
   }
 }

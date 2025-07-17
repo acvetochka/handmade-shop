@@ -80,5 +80,27 @@
     "sending": "Wird gesendet...",
     "success": "Nachricht erfolgreich gesendet!",
     "error": "Fehler beim Senden der Nachricht."
+  },
+  "contacts": {
+    "title": "Kontakte",
+    "locationLabel": "Standort",
+    "location": "87746 Erkheim, Bayern, DE"
+  },
+  "contactList": {
+    "email": {
+      "name": "acvetochka@gmail.com",
+      "label": "E-Mail",
+      "link": "mailto:acvetochka@gmail.com"
+    },
+    "phone": {
+      "name": "+4915141896120",
+      "label": "Telefon",
+      "link": "tel:+4915141896120"
+    },
+    "whatsapp": {
+      "name": "+380961270693",
+      "label": "WhatsApp",
+      "link": "https://wa.me/30961270693"
+    }
   }
 }

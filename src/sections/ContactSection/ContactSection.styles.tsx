@@ -7,11 +7,25 @@ export const contactSection = css`
   //  : "#dfd5d5"};
 `;
 
+export const contactTitle = css`
+  margin-bottom: 32px;
+  // text-align: start;
+  font-size: 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+  }
+`;
+
 export const contactWrapper = css`
   @media (min-width: 768px) {
     align-items: center;
   }
-  @media (min-width: 1020px) {
+  @media (min-width: 1440px) {
     flex-direction: row;
     align-items: flex-start;
   }
@@ -29,7 +43,7 @@ export const listStyled = css`
   flex-direction: column;
   gap: 20px;
   // align-items: center;
-  width: 300px;
+  width: 350px;
 `;
 
 export const itemStyled = css`
@@ -39,7 +53,7 @@ export const itemStyled = css`
 
   & p {
     text-transform: capitalize;
-    width: 70px;
+    width: 150px;
   }
 `;
 

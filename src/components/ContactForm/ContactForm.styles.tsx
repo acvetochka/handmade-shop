@@ -46,7 +46,7 @@ export const textareaStyled = css`
 
 export const buttonStyled = css`
   position: relative;
-  max-width: 150px;
+  width: 100%;
   padding: 12px 24px;
   border: none;
   background: linear-gradient(
@@ -66,6 +66,11 @@ export const buttonStyled = css`
   align-items: center;
   overflow: hidden;
 
-    &:hover {
+  &:hover {
     background-position: left bottom;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 150px;
+  }
 `;

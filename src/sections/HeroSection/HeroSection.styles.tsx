@@ -77,3 +77,11 @@ export const linkStyled = css`
     }
   }
 `;
+
+export const text = css`
+  font-size: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+`;
