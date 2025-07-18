@@ -17,10 +17,11 @@ export const ImageSlider = ({ images }: Props): JSX.Element => {
         autoplay: true,
         interval: 5000,
         perPage: 2,
-        perMove: 1,
+        perMove: 2,
         breakpoints: {
           768: {
             perPage: 1,
+            perMove: 1,
           },
         },
         gap: "1rem",
