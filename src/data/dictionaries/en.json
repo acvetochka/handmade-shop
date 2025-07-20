@@ -9,26 +9,22 @@
     "candles": {
       "id": "candles",
       "title": "Candles",
-      "description": "For candles, we use only high-quality wax, not paraffin. Each candle can be tailored to various occasions, from molded candles to animal-shaped, angelic, Halloween-themed, and other designs.",
-      "image": "candles"
+      "description": "I use only high-quality wax (no paraffin) to make candles. Each candle suits different occasions — from shaped candles to themed ones like animals, angels, Halloween, and more."
     },
     "cards": {
       "id": "cards",
       "title": "Greeting Cards",
-      "description": "Our greeting cards are handmade, each card is unique and crafted with love. You can order cards for any occasion, including weddings, birthdays, Christmas, Easter, and more.",
-      "image": "cards"
+      "description": "The greeting cards are handmade — each one is unique and crafted with love. You can order cards for any occasion, including weddings, birthdays, and more."
     },
     "gips": {
       "id": "gips",
-      "title": "Gypsum Figures",
-      "description": "Our gypsum figures are wonderful decorative pieces for your home. Handcrafted, they make perfect gifts or decoration for any event.",
-      "image": "gips"
+      "title": "Plaster Figures",
+      "description": "These plaster figures are lovely handmade decorations for your home. Each piece is a unique gift or accent for any celebration."
     },
     "print": {
       "id": "print",
       "title": "3D Printing",
-      "description": "We specialize in 3D-printed souvenirs and decorative products. You can order custom models or choose from our catalog of ready-made 3D products.",
-      "image": "print"
+      "description": "I offer 3D-printed souvenirs and decorative items — both custom-made and ready-made models from my catalog."
     }
   },
   "viewCatalog": "View catalog",

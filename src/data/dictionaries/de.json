@@ -9,22 +9,22 @@
     "candles": {
       "id": "candles",
       "title": "Kerzen",
-      "description": "Für Kerzen verwenden wir nur hochwertiges Wachs, nicht Paraffin. Jede Kerze kann für verschiedene Anlässe geeignet sein, von Formkerzen bis hin zu Kerzen in Tierform, Engeln, Halloween und anderen Themen."
+      "description": "Für die Kerzen verwende ich nur hochwertiges Wachs, kein Paraffin. Jede Kerze eignet sich für verschiedene Anlässe – von Formkerzen bis hin zu Motiven wie Tiere, Engel, Halloween und mehr."
     },
     "cards": {
       "id": "cards",
       "title": "Grußkarten",
-      "description": "Unsere Grußkarten sind handgemacht, jede Karte ist einzigartig und wird mit viel Liebe hergestellt. Sie können Karten für jeden Anlass bestellen, darunter Hochzeiten, Geburtstagsfeiern und mehr."
+      "description": "Die Grußkarten sind handgemacht – jede ist ein Unikat und mit viel Liebe gefertigt. Karten können für jeden Anlass bestellt werden, z. B. Hochzeiten, Geburtstage und mehr."
     },
     "gips": {
       "id": "gips",
       "title": "Gipsfiguren",
-      "description": "Unsere Gipsfiguren sind wundervolle Dekorationsstücke für Ihr Zuhause. Handgefertigt, sie sind einzigartige Geschenke oder Dekorationen für jeden Anlass."
+      "description": "Diese Gipsfiguren sind liebevoll handgefertigte Dekorationen für Ihr Zuhause. Jedes Stück ist ein einzigartiges Geschenk oder ein schönes Detail für jeden Anlass."
     },
     "print": {
       "id": "print",
       "title": "3D-Druck",
-      "description": "Wir spezialisieren uns auf 3D-gedruckte Souvenirs und dekorative Produkte. Sie können individuelle Modelle oder bereits fertige 3D-Produkte aus unserem Katalog bestellen."
+      "description": "Ich biete individuell gestaltete oder bereits fertige 3D-gedruckte Souvenirs und Dekorationsartikel an. Modelle können nach Wunsch oder aus dem vorhandenen Katalog bestellt werden."
     }
   },
   "viewCatalog": "Zum Katalog",
@@ -84,7 +84,7 @@
   "contacts": {
     "title": "Kontakte",
     "locationLabel": "Standort",
-    "location": "87746 Erkheim, Bayern, DE"
+    "location": "87746 Erkheim, Bayern"
   },
   "contactList": {
     "email": {
