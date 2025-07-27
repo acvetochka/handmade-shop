@@ -33,9 +33,7 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }>): Promise<JSX.Element> {
   const { locale } = await params;
-  // if (!hasLocale(routing.locales, locale)) {
-  //   notFound();
-  // }
+
   const rawDictionary = await getDictionary(locale as Locale);
   const dictionary = flattenDictionary({ obj: rawDictionary });
 
@@ -43,7 +41,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <GoogleAnalytics />
-        <Providers dictionary={dictionary}>
+        <Providers dictionary={dictionary} locale={locale}>
           <Header />
           <main>{children}</main>
         </Providers>

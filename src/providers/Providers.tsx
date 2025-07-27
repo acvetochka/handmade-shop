@@ -1,20 +1,19 @@
 "use client";
 
-import { ReactNode } from "react";
-
 import { EmotionProvider } from "./EmotionProvider";
-import { I18nProvider, Dictionary } from "./I18nProvider";
+import { I18nProvider } from "./I18nProvider";
+import { I18nProviderType } from "@/types";
 
 export default function Providers({
   children,
+  locale,
   dictionary,
-}: {
-  children: ReactNode;
-  dictionary: Dictionary;
-}) {
+}: I18nProviderType) {
   return (
     <EmotionProvider>
-      <I18nProvider dictionary={dictionary}>{children}</I18nProvider>
+      <I18nProvider dictionary={dictionary} locale={locale}>
+        {children}
+      </I18nProvider>
     </EmotionProvider>
   );
 }

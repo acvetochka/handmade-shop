@@ -1,26 +1,29 @@
 "use client";
 
+import { I18nContextType, I18nProviderType } from "@/types";
 import { createContext, useContext } from "react";
 
-export type Dictionary = Record<string, string>;
-
-const I18nContext = createContext<Dictionary>({});
+const I18nContext = createContext<I18nContextType>({
+  dictionary: {},
+  locale: "de",
+});
 
 export const useTranslation = () => {
-  const dict = useContext(I18nContext);
+  const { dictionary, locale } = useContext(I18nContext);
   return {
-    t: (key: string) => dict[key] ?? key,
+    t: (key: string) => dictionary[key] ?? key,
+    locale,
   };
 };
 
 export const I18nProvider = ({
   dictionary,
+  locale,
   children,
-}: {
-  dictionary: Dictionary;
-  children: React.ReactNode;
-}) => {
+}: I18nProviderType) => {
   return (
-    <I18nContext.Provider value={dictionary}>{children}</I18nContext.Provider>
+    <I18nContext.Provider value={{ dictionary, locale }}>
+      {children}
+    </I18nContext.Provider>
   );
 };
