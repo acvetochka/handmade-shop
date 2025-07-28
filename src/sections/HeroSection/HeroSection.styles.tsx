@@ -49,6 +49,7 @@ export const linkStyled = css`
   align-items: center;
   overflow: hidden;
   margin-top: 20px;
+  box-shadow: 1px 1px 2px 0px #311704;
 
   & p {
     transition: transform 0.3s ease;

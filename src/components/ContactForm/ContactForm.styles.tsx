@@ -65,6 +65,7 @@ export const buttonStyled = css`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  box-shadow: 1px 1px 2px 0px #311704;
 
   &:hover {
     background-position: left bottom;
