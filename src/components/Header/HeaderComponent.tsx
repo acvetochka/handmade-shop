@@ -5,13 +5,20 @@ import Link from "next/link";
 import { MdMenu, MdClose } from "react-icons/md";
 import { useMediaQuery } from "react-responsive";
 import {
-  Container,
+  // Container,
   LanguageSwitcher,
   MobileMenu,
   Navigation,
 } from "@/components";
-import { headerStyles, menuButton, navWrapperStyles } from "./Header.styles";
+import {
+  container,
+  // container,
+  headerStyles,
+  menuButton,
+  navWrapperStyles,
+} from "./Header.styles";
 import { useMobileMenu } from "@/hooks/useMobileMenu";
+import Image from "next/image";
 
 export const HeaderComponent = (): JSX.Element => {
   // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,9 +33,17 @@ export const HeaderComponent = (): JSX.Element => {
 
   return (
     <header css={headerStyles}>
-      <Container>
+      <div css={container}>
+        {/* <Container> */}
         <div css={navWrapperStyles}>
-          <Link href="/">Handwerk Ecke</Link>
+          <Link href="/">
+            <Image
+              src="/hw-logo2.png"
+              width={90}
+              height={40}
+              alt="Handwerk Ecke logo"
+            />
+          </Link>
 
           {!isMobile && <Navigation />}
           <LanguageSwitcher />
@@ -42,11 +57,12 @@ export const HeaderComponent = (): JSX.Element => {
               >
                 {isOpen ? <MdClose size={24} /> : <MdMenu size={24} />}
               </button>
-              <MobileMenu isOpen={isOpen} onClose={toggleMenu} />
             </>
           )}
+          <MobileMenu isOpen={isOpen} onClose={toggleMenu} />
         </div>
-      </Container>
+      </div>
+      {/* </Container> */}
     </header>
   );
 };

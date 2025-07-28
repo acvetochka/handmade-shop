@@ -1,5 +1,6 @@
 :root {
   --background: #f0eae0;
+  --font-montserrat: "Montserrat", sans-serif;
   /* #ead4d4,#f0eae0,#cee0e6,#c6b4d8,#f5c0bf */
   --foreground: #2a221a;
 
@@ -24,9 +25,9 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  background-image: url("/fon.jpg");
+  /* background-image: url("/fon.jpg"); */
   background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -47,8 +48,13 @@ body {
   }
 }
 
+.montserrat {
+  font-family: var(--font-montserrat);
+}
+
 main {
   margin: 0 auto;
+  padding-top: 60px;
 }
 
 * {
