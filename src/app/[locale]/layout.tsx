@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@/components";
+import { FooterComponent } from "@/components/Footer/FooterComponent";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default async function LocaleLayout({
         <Providers dictionary={dictionary} locale={locale}>
           <Header />
           <main>{children}</main>
+          <FooterComponent />
         </Providers>
       </body>
     </html>
