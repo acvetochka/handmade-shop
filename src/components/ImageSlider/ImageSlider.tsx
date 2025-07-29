@@ -4,6 +4,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import Image from "next/image";
 import type { JSX } from "react";
+import { imageStyles } from "./ImageSlider.styles";
 
 type Props = {
   images: string[];
@@ -39,12 +40,7 @@ export const ImageSlider = ({ images }: Props): JSX.Element => {
             width={200}
             height={300}
             alt={`Slide ${index + 1}`}
-            style={{
-              width: "100%",
-              height: "auto",
-              borderRadius: "12px",
-              objectFit: "cover",
-            }}
+            css={imageStyles}
           />
         </SplideSlide>
       ))}
