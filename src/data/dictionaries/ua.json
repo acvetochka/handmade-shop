@@ -102,5 +102,30 @@
       "label": "WhatsApp",
       "link": "https://wa.me/30961270693"
     }
+  },
+  "impressum": {
+    "title": "Вихідні дані",
+    "ownerLabel": "Відповідальна особа відповідно до § 5 TMG",
+    "companyName": "Handmade von Kuznietsova",
+    "registrationNumber": "Реєстрація Gewerbe № 123456/2024 (DE)",
+    "name": "Альона Кузнєцова",
+    "address": "Schlößlestraße 15, 87746 Erkheim, Німеччина",
+    "email": {
+      "name": "acvetochka@gmail.com",
+      "label": "Електронна пошта",
+      "link": "mailto:acvetochka@gmail.com"
+    },
+    "phone": {
+      "name": "+4915141896120",
+      "label": "Телефон",
+      "link": "tel:+4915141896120"
+    },
+    "disclaimerLabel": "Відмова від відповідальності",
+    "disclaimerText": "Попри ретельну перевірку ми не несемо відповідальності за вміст зовнішніх посилань.",
+    "disputeResolution": {
+      "platform": "Платформа Європейської Комісії для онлайн-вирішення спорів: ",
+      "link": "https://ec.europa.eu/consumers/odr",
+      "statement": "Я не зобов'язана та не маю наміру брати участь у процедурі вирішення спорів у споживчому арбітражному органі."
+    }
   }
 }
