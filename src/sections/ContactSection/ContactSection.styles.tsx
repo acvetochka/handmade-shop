@@ -4,6 +4,7 @@ export const contactSection = css`
   //   background-color: #f0eae0;
   background-color: #dfd5d5;
   padding: 40px 0;
+  border-radius: 12px;
   //  : "#dfd5d5"};
 `;
 
@@ -11,6 +12,8 @@ export const contactTitle = css`
   margin-bottom: 32px;
   // text-align: start;
   font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
     font-size: 32px;
