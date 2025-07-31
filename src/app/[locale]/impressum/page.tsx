@@ -6,9 +6,5 @@ export const metadata: Metadata = {
 };
 
 export default function ImpressumPage() {
-  return (
-    <main className="p-6 max-w-2xl mx-auto">
-      <Impressum />
-    </main>
-  );
+  return <Impressum />;
 }
