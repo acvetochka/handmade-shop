@@ -11,6 +11,7 @@ export const categoryBox = (index: number) => css`
   // background-size: cover;
   // background-blend-mode: lighten;
   background-color: ${index % 2 ? "#f0eae0" : "#dfd5d5"};
+  border-radius: 12px;
 `;
 
 export const categoryWrapper = css`
@@ -49,6 +50,8 @@ export const descriptionWrapper = (index: number) => css`
 export const categoryTitle = css`
   // margin-bottom: 20px;
   font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
     font-size: 32px;
