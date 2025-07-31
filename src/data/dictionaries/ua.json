@@ -107,9 +107,9 @@
     "title": "Вихідні дані",
     "ownerLabel": "Відповідальна особа відповідно до § 5 TMG",
     "companyName": "Handmade von Kuznietsova",
-    "registrationNumber": "Реєстрація Gewerbe № 123456/2024 (DE)",
+    "registrationNumber": "Реєстраційний номер підприємницької діяльності: H11000000803_2 (DE)",
     "name": "Альона Кузнєцова",
-    "address": "Schlößlestraße 15, 87746 Erkheim, Німеччина",
+    "address": "Schlößlestraße 15, \n 87746 Erkheim, \n Німеччина",
     "email": {
       "name": "acvetochka@gmail.com",
       "label": "Електронна пошта",
@@ -120,11 +120,12 @@
       "label": "Телефон",
       "link": "tel:+4915141896120"
     },
+    "broadcasting": "Відповідальна особа згідно з § 55 ч. 2 RStV:",
     "disclaimerLabel": "Відмова від відповідальності",
-    "disclaimerText": "Попри ретельну перевірку ми не несемо відповідальності за вміст зовнішніх посилань.",
+    "disclaimerText": "Попри ретельну перевірку я не несу відповідальності за вміст зовнішніх посилань.",
     "disputeResolution": {
       "platform": "Платформа Європейської Комісії для онлайн-вирішення спорів: ",
-      "link": "https://ec.europa.eu/consumers/odr",
+      "link": "https://consumer-redress.ec.europa.eu/index_en",
       "statement": "Я не зобов'язана та не маю наміру брати участь у процедурі вирішення спорів у споживчому арбітражному органі."
     }
   }

@@ -107,16 +107,25 @@
     "title": "Impressum",
     "ownerLabel": "Verantwortlich für den Inhalt gemäß § 5 TMG",
     "companyName": "Handmade von Kuznietsova",
-    "registrationNumber": "Gewerbeanmeldung Nr. 123456/2024",
+    "registrationNumber": "Gewerbeanmeldung Nr. H11000000803_2",
     "name": "Alona Kuznietsova",
-    "address": "Schlößlestraße 15, 87746 Erkheim, Deutschland",
-    "email": "acvetochka@gmail.com",
-    "phone": "+49 1514 1896120",
+    "address": "Schlößlestraße 15, \n 87746 Erkheim, \n Deutschland",
+    "email": {
+      "name": "acvetochka@gmail.com",
+      "label": "E-Mail",
+      "link": "mailto:acvetochka@gmail.com"
+    },
+    "phone": {
+      "name": "+4915141896120",
+      "label": "Telefon",
+      "link": "tel:+4915141896120"
+    },
+    "broadcasting": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
     "disclaimerLabel": "Haftungsausschluss",
-    "disclaimerText": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.",
+    "disclaimerText": "Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer Links.",
     "disputeResolution": {
       "platform": "Plattform der EU-Kommission zur Online-Streitbeilegung:",
-      "link": " https://ec.europa.eu/consumers/odr",
+      "link": "https://consumer-redress.ec.europa.eu/index_en",
       "statement": "Ich bin zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle nicht verpflichtet und nicht bereit."
     }
   }

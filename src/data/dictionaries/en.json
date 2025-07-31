@@ -107,16 +107,25 @@
     "title": "Legal Notice",
     "ownerLabel": "Responsible for content according to § 5 TMG",
     "companyName": "Handmade von Kuznietsova",
-    "registrationNumber": "Gewerbe registration No. 123456/2024 (DE)",
+    "registrationNumber": "Business registration number: H11000000803_2 (DE)",
     "name": "Alona Kuznietsova",
-    "address": "Schlößlestraße 15, 87746 Erkheim, Germany",
-    "email": "acvetochka@gmail.com",
-    "phone": "+49 1514 1896120",
+    "address": "Schlößlestraße 15, \n 87746 Erkheim, \n Germany",
+    "email": {
+      "name": "acvetochka@gmail.com",
+      "label": "Email",
+      "link": "mailto:acvetochka@gmail.com"
+    },
+    "phone": {
+      "name": "+4915141896120",
+      "label": "Phone",
+      "link": "tel:+4915141896120"
+    },
+    "broadcasting": "Person responsible for content pursuant to § 55 (2) RStV:",
     "disclaimerLabel": "Disclaimer",
-    "disclaimerText": "Despite careful content control, we assume no liability for the content of external links.",
+    "disclaimerText": "Despite careful content control, I assume no liability for the content of external links.",
     "disputeResolution": {
       "platform": "Platform of the European Commission for Online Dispute Resolution: ",
-      "link": " https://ec.europa.eu/consumers/odr",
+      "link": "https://consumer-redress.ec.europa.eu/index_en",
       "statement": "I am not obligated or willing to participate in a dispute resolution procedure before a consumer arbitration board."
     }
   }
