@@ -128,5 +128,44 @@
       "link": "https://consumer-redress.ec.europa.eu/index_en",
       "statement": "Ich bin zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle nicht verpflichtet und nicht bereit."
     }
+  },
+  "datenschutz": {
+    "privacy": {
+      "title": "Datenschutzerklärung",
+
+      "general": {
+        "title": "Allgemeine Hinweise",
+        "text": "Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Diese Website erhebt und verarbeitet personenbezogene Daten nur im Einklang mit der Datenschutz-Grundverordnung (DSGVO)."
+      },
+
+      "responsible": {
+        "title": "Verantwortliche Stelle",
+        "name": {
+          "label": "Name",
+          "text": "Alona Kuznietsova"
+        },
+        "address": {
+          "label": "Anschrift",
+          "text": "Schlößlestraße 15, \n 87746 Erkheim, \n Deutschland"
+        },
+        "email": {
+          "label": "E-Mail",
+          "text": "acvetochka@gmail.com"
+        },
+        "googleAnalytics": {
+          "title": "Google Analytics",
+          "text": "Diese Website verwendet Google Analytics, einen Webanalysedienst der Google LLC. Dabei werden Informationen über Ihre Nutzung der Website (z. B. besuchte Seiten, Verweildauer, Herkunft) gespeichert. Die IP-Adresse wird anonymisiert („IP-Anonymisierung“) und nicht mit anderen Daten zusammengeführt.\nSie können die Datenerfassung durch Google verhindern, indem Sie folgenden Link verwenden:\n→ Google Analytics Opt-Out"
+        },
+
+        "contactForm": {
+          "title": "Kontaktformular (EmailJS)",
+          "text": "Wenn Sie uns über das Formular kontaktieren, werden Ihre Angaben (z. B. Name, E-Mail, Nachricht) über EmailJS übermittelt. Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage genutzt und nicht gespeichert."
+        },
+        "rights": {
+          "title": "Ihre Rechte",
+          "text": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten. Kontaktieren Sie uns unter acvetochka@gmail.com."
+        }
+      }
+    }
   }
 }
