@@ -3,7 +3,7 @@
 import { useTranslation } from "@/providers";
 import Link from "next/link";
 import { JSX } from "react";
-import { footerStyles } from "./Footer.styles";
+import { footerStyles, linksWrapper } from "./Footer.styles";
 
 export const FooterComponent = (): JSX.Element => {
   const { locale } = useTranslation();
@@ -21,7 +21,10 @@ export const FooterComponent = (): JSX.Element => {
         </a>
         <p>All rights reserved.</p>
       </div>
-      <Link href={`/${locale}/impressum`}>Impressum</Link>
+      <div css={linksWrapper}>
+        <Link href={`/${locale}/impressum`}>Impressum</Link>
+        <Link href={`/${locale}/datenschutz`}>Datenschutz</Link>
+      </div>
     </footer>
   );
 };

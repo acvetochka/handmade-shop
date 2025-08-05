@@ -11,3 +11,4 @@ export * from "./ImageSlider/ImageSlider";
 export * from "./GoogleAnalytics/GoogleAnalytics";
 export * from "./Header/HeaderComponent";
 export * from "./Impressum/Impressum";
+export * from "./Datenschutz/Datenschutz";

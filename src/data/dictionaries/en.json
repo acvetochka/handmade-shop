@@ -130,40 +130,38 @@
     }
   },
   "datenschutz": {
-    "privacy": {
-      "title": "Privacy Policy",
+    "title": "Privacy Policy",
 
-      "general": {
-        "title": "General Information",
-        "text": "Protecting your personal data is important to us. This website collects and processes personal data only in accordance with the General Data Protection Regulation (GDPR)."
+    "general": {
+      "title": "General Information",
+      "text": "Protecting your personal data is important to us. This website collects and processes personal data only in accordance with the General Data Protection Regulation (GDPR)."
+    },
+
+    "responsible": {
+      "title": "Responsible Party",
+      "name": {
+        "label": "Name",
+        "text": "Alona Kuznietsova"
       },
-
-      "responsible": {
-        "title": "Responsible Party",
-        "name": {
-          "label": "Name",
-          "text": "Alona Kuznietsova"
-        },
-        "address": {
-          "label": "Address",
-          "text": "Schlößlestraße 15,\n87746 Erkheim,\nGermany"
-        },
-        "email": {
-          "label": "Email",
-          "text": "acvetochka@gmail.com"
-        },
-        "googleAnalytics": {
-          "title": "Google Analytics",
-          "text": "This website uses Google Analytics, a web analytics service provided by Google LLC. Information about your use of the website (e.g. visited pages, duration of visit, source) is stored. The IP address is anonymized (“IP anonymization”) and not merged with other data.\nYou can prevent the collection of data by Google by using the following link:\n→ Google Analytics Opt-Out"
-        },
-        "contactForm": {
-          "title": "Contact Form (EmailJS)",
-          "text": "If you contact us via the form, your details (e.g. name, email, message) will be transmitted via EmailJS. These data are used solely to process your request and are not stored."
-        },
-        "rights": {
-          "title": "Your Rights",
-          "text": "You have the right to access, correct, delete, and restrict the processing of your data. Contact us at acvetochka@gmail.com."
-        }
+      "address": {
+        "label": "Address",
+        "text": "Schlößlestraße 15,\n87746 Erkheim,\nGermany"
+      },
+      "email": {
+        "label": "Email",
+        "text": "acvetochka@gmail.com"
+      },
+      "googleAnalytics": {
+        "title": "Google Analytics",
+        "text": "This website uses Google Analytics, a web analytics service provided by Google LLC. Information about your use of the website (e.g. visited pages, duration of visit, source) is stored. The IP address is anonymized (“IP anonymization”) and not merged with other data.\nYou can prevent the collection of data by Google by using the following link:\n→ Google Analytics Opt-Out"
+      },
+      "contactForm": {
+        "title": "Contact Form (EmailJS)",
+        "text": "If you contact us via the form, your details (e.g. name, email, message) will be transmitted via EmailJS. These data are used solely to process your request and are not stored."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "text": "You have the right to access, correct, delete, and restrict the processing of your data. Contact us at acvetochka@gmail.com."
       }
     }
   }

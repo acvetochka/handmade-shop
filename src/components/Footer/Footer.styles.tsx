@@ -42,6 +42,12 @@ export const footerStyles = css`
   }
 `;
 
+export const linksWrapper = css`
+display: flex;
+flex-direction: column;
+gap: 8px;
+`
+
 // export const navWrapperStyles = css`
 //   display: flex;
 //   width: 100%;
