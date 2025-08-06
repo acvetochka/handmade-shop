@@ -11,6 +11,7 @@ import {
   textStyles,
   wrapper,
 } from "./Impressum.styles";
+import { mainTitle } from "../Datenschutz/Datenschutz.styles";
 
 export const Impressum = (): JSX.Element => {
   const { t } = useTranslation();
@@ -19,7 +20,7 @@ export const Impressum = (): JSX.Element => {
     <section css={sectionStyles}>
       <Container>
         <div css={wrapper}>
-          <h1 className="text-3xl font-bold mb-4">{t("impressum.title")}</h1>
+          <h1 css={mainTitle}>{t("impressum.title")}</h1>
 
           <div css={paragraphWrapper}>
             <h2 css={secondTitle}>1. {t("impressum.ownerLabel")}</h2>

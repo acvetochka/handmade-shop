@@ -5,6 +5,7 @@ import { JSX } from "react";
 import { Container } from "@/components";
 import {
   LabelWrapper,
+  mainTitle,
   paragraphWrapper,
   secondTitle,
   sectionStyles,
@@ -18,7 +19,7 @@ export const Datenschutz = (): JSX.Element => {
     <section css={sectionStyles}>
       <Container>
         <div css={wrapper}>
-          <h1 className="text-3xl font-bold mb-4">{t("datenschutz.title")}</h1>
+          <h1 css={mainTitle}>{t("datenschutz.title")}</h1>
 
           <div css={paragraphWrapper}>
             <h2 css={secondTitle}>1. {t("datenschutz.general.title")}</h2>

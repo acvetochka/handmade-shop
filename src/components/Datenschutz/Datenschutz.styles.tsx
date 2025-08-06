@@ -4,6 +4,11 @@ export const sectionStyles = css`
   padding: 40px 0;
 `;
 
+export const mainTitle = css`
+  margin: 0 auto;
+  text-transform: uppercase;
+`;
+
 export const wrapper = css`
   display: flex;
   flex-direction: column;
