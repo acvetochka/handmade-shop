@@ -6,7 +6,7 @@ import { JSX } from "react";
 import { footerStyles, linksWrapper } from "./Footer.styles";
 
 export const FooterComponent = (): JSX.Element => {
-  const { locale } = useTranslation();
+  const { locale, t } = useTranslation();
   return (
     <footer css={footerStyles}>
       <div>
@@ -22,8 +22,8 @@ export const FooterComponent = (): JSX.Element => {
         <p>All rights reserved.</p>
       </div>
       <div css={linksWrapper}>
-        <Link href={`/${locale}/impressum`}>Impressum</Link>
-        <Link href={`/${locale}/datenschutz`}>Datenschutz</Link>
+        <Link href={`/${locale}/impressum`}>{t("impressum.title")}</Link>
+        <Link href={`/${locale}/datenschutz`}>{t("datenschutz.title")}</Link>
       </div>
     </footer>
   );
