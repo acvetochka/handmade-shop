@@ -35,7 +35,7 @@ export const Datenschutz = (): JSX.Element => {
             </div>
             <div css={LabelWrapper}>
               <p>{t("datenschutz.responsible.email.label")}: </p>
-              <a href={t("impressum.email.link")}>
+              <a href={t("impressum.email.link")} className="link">
                 {t("impressum.email.name")}
               </a>
             </div>

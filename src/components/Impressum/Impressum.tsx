@@ -30,13 +30,13 @@ export const Impressum = (): JSX.Element => {
             <p css={textStyles}>{t("impressum.address")}</p>
             <div css={LabelWrapper}>
               <p>{t("impressum.phone.label")}: </p>
-              <a href={t("impressum.phone.link")}>
+              <a href={t("impressum.phone.link")} className="link">
                 {t("impressum.phone.name")}
               </a>
             </div>
             <div css={LabelWrapper}>
               <p>{t("impressum.email.label")}: </p>
-              <a href={t("impressum.email.link")}>
+              <a href={t("impressum.email.link")} className="link">
                 {t("impressum.email.name")}
               </a>
             </div>
@@ -58,6 +58,7 @@ export const Impressum = (): JSX.Element => {
               href={t("impressum.disputeResolution.link")}
               target="_blank"
               rel="noopener noreferrer"
+              className="link"
             >
               {t("impressum.disputeResolution.link")}
             </a>
