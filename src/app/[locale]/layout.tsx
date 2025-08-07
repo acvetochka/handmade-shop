@@ -1,12 +1,12 @@
 import { JSX, ReactNode } from "react";
 import { flattenDictionary, getDictionary, Locale, locales } from "@/lib";
 import Providers from "@/providers/Providers";
-import { Header } from "@/sections";
+// import { Header } from "@/sections";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import { GoogleAnalytics } from "@/components";
-import { FooterComponent } from "@/components/Footer/FooterComponent";
+import { Footer, GoogleAnalytics, Header, ScrollToHash } from "@/components";
+// import { FooterComponent } from "@/components/layout/Footer/FooterComponent";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -39,9 +39,10 @@ export default async function LocaleLayout({
       <body className={`${montserrat.variable} `}>
         <GoogleAnalytics />
         <Providers dictionary={dictionary} locale={locale}>
+          <ScrollToHash />
           <Header />
           <main>{children}</main>
-          <FooterComponent />
+          <Footer />
         </Providers>
       </body>
     </html>
