@@ -1,4 +1,4 @@
-import { ContactSection, HeroSection, HomeCategory } from "@/sections";
+import { ContactSection, HeroSection, HomeCategory } from "@/components";
 
 export default function HomePage() {
   return (

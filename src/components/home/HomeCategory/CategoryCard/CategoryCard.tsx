@@ -111,7 +111,7 @@ export const CategoryCard = ({
 
   if (!isValidCategory(name)) {
     console.warn(`Invalid category name: ${name}`);
-    return <></>; // або відображення заглушки
+    return <></>; // або відображення заглушки // ДОДАТИ
   }
 
   const images = imagesByCategory[name];

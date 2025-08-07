@@ -2,7 +2,7 @@
 
 import { JSX } from "react";
 import { Container, LinkToHash } from "@/components";
-import { useTranslation } from "@/providers/I18nProvider";
+import { useTranslation } from "@/providers";
 import {
   heroSection,
   linkStyled,

@@ -1,7 +1,6 @@
 "use client";
 
-import { Container } from "@/components";
-import { ContactForm } from "@/components/ContactForm/ContactForm";
+import { ContactForm, Container } from "@/components";
 import {
   contactSection,
   contactTitle,
