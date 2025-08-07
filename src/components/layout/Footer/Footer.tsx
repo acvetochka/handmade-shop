@@ -5,7 +5,7 @@ import Link from "next/link";
 import { JSX } from "react";
 import { footerStyles, linksWrapper } from "./Footer.styles";
 
-export const FooterComponent = (): JSX.Element => {
+export const Footer = (): JSX.Element => {
   const { locale, t } = useTranslation();
   return (
     <footer css={footerStyles}>
@@ -15,15 +15,19 @@ export const FooterComponent = (): JSX.Element => {
           href="https://kuznietsova.org"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block"
+          className="link"
         >
           Alona Kuznietsova
         </a>
         <p>All rights reserved.</p>
       </div>
       <div css={linksWrapper}>
-        <Link href={`/${locale}/impressum`}>{t("impressum.title")}</Link>
-        <Link href={`/${locale}/datenschutz`}>{t("datenschutz.title")}</Link>
+        <Link href={`/${locale}/impressum`} className="link">
+          {t("impressum.title")}
+        </Link>
+        <Link href={`/${locale}/datenschutz`} className="link">
+          {t("datenschutz.title")}
+        </Link>
       </div>
     </footer>
   );

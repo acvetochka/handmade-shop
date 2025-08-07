@@ -1,18 +1,12 @@
 "use client";
 
-import { JSX, useEffect, useState } from "react";
+import { JSX } from "react";
 import Link from "next/link";
 import { MdMenu, MdClose } from "react-icons/md";
 import { useMediaQuery } from "react-responsive";
-import {
-  // Container,
-  LanguageSwitcher,
-  MobileMenu,
-  Navigation,
-} from "@/components";
+import { LanguageSwitcher, MobileMenu, Navigation } from "@/components";
 import {
   container,
-  // container,
   headerStyles,
   menuButton,
   navWrapperStyles,
@@ -20,21 +14,13 @@ import {
 import { useMobileMenu } from "@/hooks/useMobileMenu";
 import Image from "next/image";
 
-export const HeaderComponent = (): JSX.Element => {
-  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+export const Header = (): JSX.Element => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  const [isClient, setIsClient] = useState(false);
-
   const { isOpen, toggleMenu } = useMobileMenu();
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   return (
     <header css={headerStyles}>
       <div css={container}>
-        {/* <Container> */}
         <div css={navWrapperStyles}>
           <Link href="/">
             <Image
@@ -47,7 +33,7 @@ export const HeaderComponent = (): JSX.Element => {
 
           {!isMobile && <Navigation />}
           <LanguageSwitcher />
-          {isClient && isMobile && (
+          {isMobile && (
             <>
               <button
                 css={menuButton}
@@ -62,7 +48,6 @@ export const HeaderComponent = (): JSX.Element => {
           <MobileMenu isOpen={isOpen} onClose={toggleMenu} />
         </div>
       </div>
-      {/* </Container> */}
     </header>
   );
 };

@@ -1,14 +1,18 @@
 export * from "./ui/Container/Container";
-// export * from "./ui/ScrollLink/ScrollLink";
 export * from "./ui/Input/Input";
+export * from "./ui/LinkToHash/LinkToHash";
+
+export * from "./layout/LanguageSwitcher/LanguageSwitcher";
+export * from "./layout/MobileMenu/MobileMenu";
+export * from "./layout/Navigation/Navigation";
+export * from "./layout/GoogleAnalytics/GoogleAnalytics";
+export * from "./layout/Header/Header";
+export * from "./layout/Footer/Footer";
+export * from "./layout/ScrollToHash/ScrollToHash";
+
 export * from "./CategoryCard/CategoryCard";
 export * from "./CategoryLink/CategoryLink";
-export * from "./LanguageSwitcher/LanguageSwitcher";
-export { default as ScrollLink } from "./ui/ScrollLink";
-export * from "./MobileMenu/MobileMenu";
-export * from "./Navigation/Navigation";
 export * from "./ImageSlider/ImageSlider";
-export * from "./GoogleAnalytics/GoogleAnalytics";
-export * from "./Header/HeaderComponent";
+
 export * from "./Impressum/Impressum";
 export * from "./Datenschutz/Datenschutz";
