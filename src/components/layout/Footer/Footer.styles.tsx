@@ -9,9 +9,11 @@ export const footerStyles = css`
   max-width: 393px;
   margin: 0 auto;
   width: 100%;
-  height: 60px;
+  // height: 60px;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
+  gap: 20px;
   justify-content: space-between;
   margin-top: auto;
 
@@ -22,6 +24,7 @@ export const footerStyles = css`
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding: 10px 40px;
+    flex-direction: row;
   }
 
   @media screen and (min-width: 1440px) {
