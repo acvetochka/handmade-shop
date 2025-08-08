@@ -1,4 +1,4 @@
-import { JSX, ReactNode } from "react";
+import { JSX, ReactNode, Suspense } from "react";
 import { flattenDictionary, getDictionary, Locale, locales } from "@/lib";
 import Providers from "@/providers/Providers";
 import type { Metadata } from "next";
@@ -37,7 +37,9 @@ export default async function LocaleLayout({
       <body className={`${montserrat.variable} `}>
         <GoogleAnalytics />
         <Providers dictionary={dictionary} locale={locale}>
-          <ScrollToHash />
+          <Suspense fallback={null}>
+            <ScrollToHash />
+          </Suspense>
           <Header />
           <main>{children}</main>
           <Footer />
