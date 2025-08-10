@@ -11,7 +11,7 @@ import {
   textStyles,
   wrapper,
 } from "./Impressum.styles";
-import { mainTitle } from "../datenschutzPage/Datenschutz.styles";
+import { mainTitle } from "../datenschutz/Datenschutz.styles";
 
 export const Impressum = (): JSX.Element => {
   const { t } = useTranslation();
