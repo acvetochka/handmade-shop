@@ -18,5 +18,5 @@ export * from "./home/HomeCategory/ImageSlider/ImageSlider";
 export * from "./home/ContactSection/ContactSection";
 export * from "./home/ContactSection/ContactForm/ContactForm";
 
-export * from "./Impressum/Impressum";
-export * from "./Datenschutz/Datenschutz";
+export * from "./impressum/Impressum";
+export * from "./datenschutz/Datenschutz";
