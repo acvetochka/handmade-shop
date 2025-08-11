@@ -26,7 +26,7 @@ export const ContactSection = (): JSX.Element => {
             {contacts.map((name, id) => (
               <li css={itemStyled} key={id}>
                 <p css={textStyled}>{t(`contactList.${name}.label`)}</p>
-                <a href={t(`contactList.${name}.link`)}>
+                <a href={t(`contactList.${name}.link`)} className="link">
                   {t(`contactList.${name}.name`)}
                 </a>
               </li>
