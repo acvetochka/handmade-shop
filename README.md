@@ -114,4 +114,4 @@ yarn dev
 
 ## Backend
 
-[Backend repo](https://github.com/acvetochka/hw-ecke-backend)
+[Backend repo](https://github.com/Handwerk-Ecke/hw-ecke-backend)
