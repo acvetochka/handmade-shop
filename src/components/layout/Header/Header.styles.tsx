@@ -20,7 +20,7 @@ export const container = css`
   box-shadow: 0 1px 10px 0px #311704;
   // backdrop-filter: blur(10px);
   border-radius: 0 0 8px 8px;
-  max-width: 393px;
+  // max-width: 393px;
   margin: 0 auto;
   width: 100%;
   height: 60px;
@@ -29,16 +29,19 @@ export const container = css`
   justify-content: space-between;
 
   @media screen and (min-width: 393px) {
-    max-width: 393px;
+    // max-width: 393px;
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    // max-width: 768px;
     padding: 10px 40px;
+    height: 80px;
   }
 
   @media screen and (min-width: 1440px) {
-    max-width: 1440px;
+    // max-width: 1440px;
+    max-width: 100%;
+    width: 100%;
     padding: 10px 60px;
   }
 `;
@@ -70,7 +73,7 @@ export const menuButton = css`
     fill: #2a221a;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1440px) {
     display: none; /* Сховати кнопку на великих екранах */
   }
 `;

@@ -15,7 +15,7 @@ import { useMobileMenu } from "@/hooks/useMobileMenu";
 import Image from "next/image";
 
 export const Header = (): JSX.Element => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 1439 });
   const { isOpen, toggleMenu } = useMobileMenu();
 
   return (
@@ -24,9 +24,10 @@ export const Header = (): JSX.Element => {
         <div css={navWrapperStyles}>
           <Link href="/">
             <Image
-              src="/hw-logo2.png"
-              width={90}
-              height={40}
+              // src="/hw-logo2.png"
+              src="/logo-hw-ecke.png"
+              width={100}
+              height={100}
               alt="Handwerk Ecke logo"
             />
           </Link>
