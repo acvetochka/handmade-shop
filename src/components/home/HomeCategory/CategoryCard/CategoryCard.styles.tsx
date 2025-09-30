@@ -12,6 +12,7 @@ export const categoryBox = (index: number) => css`
   // background-blend-mode: lighten;
   background-color: ${index % 2 ? "#f0eae0" : "#dfd5d5"};
   border-radius: 12px;
+  width: 100%;
 `;
 
 export const categoryWrapper = css`

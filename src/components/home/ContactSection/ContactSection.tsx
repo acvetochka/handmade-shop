@@ -8,6 +8,7 @@ import {
   itemStyled,
   listStyled,
   textStyled,
+  locationStyle,
 } from "./ContactSection.styles";
 import { JSX } from "react";
 import { useTranslation } from "@/providers";
@@ -33,7 +34,7 @@ export const ContactSection = (): JSX.Element => {
             ))}
             <li css={itemStyled}>
               <p css={textStyled}>{t(`contacts.locationLabel`)}:</p>
-              <span>{t(`contacts.location`)}</span>
+              <span css={locationStyle}>{t(`contacts.location`)}</span>
             </li>
           </ul>
           <ContactForm />

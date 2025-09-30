@@ -57,9 +57,14 @@ export const itemStyled = css`
   & p {
     text-transform: capitalize;
     width: 150px;
+    flex-shrink: 0;
   }
 `;
 
 export const textStyled = css`
+  text-align: start;
+`;
+
+export const locationStyle = css`
   text-align: start;
 `;
