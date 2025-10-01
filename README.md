@@ -73,7 +73,7 @@ tsconfig.json           — конфігурація TypeScript
 
 - Emotion Styles
 
-- Міжнародна підтримка (i18n) — налаштування через next-i18next
+- Міжнародна підтримка (i18n) — налаштування через next-i18next - de, en, ua
 
 - Інструменти налаштування ESLint, конфігурація build та dev середовища
 
