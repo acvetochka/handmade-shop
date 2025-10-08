@@ -27,11 +27,12 @@ export default function ProductsPage() {
         {products.map((product) => (
           <li key={product.id} css={productItem}>
             <h2>{product.title}</h2>
-            {product.images[0] && (
+            {product?.images[0] && (
               <Image
-                src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${product.images[0].url}`}
+                src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${product?.images[0].url}`}
                 alt={product.title}
                 width={200}
+                height={350}
               />
             )}
             <p>
