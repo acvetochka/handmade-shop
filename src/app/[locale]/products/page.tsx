@@ -20,6 +20,8 @@ export default function ProductsPage() {
     fetchProducts(locale).then(setProducts);
   }, [locale]);
 
+  console.log(products);
+
   return (
     <section>
       <h1>{t("products.pageTitle")}</h1>
