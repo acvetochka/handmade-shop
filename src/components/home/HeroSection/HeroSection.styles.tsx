@@ -1,11 +1,30 @@
 import { css } from "@emotion/react";
 
 export const heroSection = css`
+  padding-top: 50px;
+  padding-bottom: 50px;
   min-height: 500px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   justify-content: center;
+`;
+
+export const heroWrapper = css`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
+
+export const imageStyles = css`
+  @media screen and (min-width: 1440px) {
+    width: 512px;
+    height: auto;
+  }
 `;
 
 export const title = css`
@@ -17,7 +36,7 @@ export const title = css`
   }
 
   @media screen and (min-width: 1440px) {
-    font-size: 72px;
+    font-size: 64px;
   }
 `;
 
